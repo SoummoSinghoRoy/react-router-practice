@@ -5,6 +5,7 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Posts from './components/Posts';
 import Nav from './components/Nav';
+import Post from './views/Post';
 
 
 class App extends Component {
@@ -17,7 +18,8 @@ class App extends Component {
           <Route exact path='/' component={Home} />
           <Route path='/about-us' component={About} />
           <Route path='/contact' component={Contact} />
-          <Route path='/posts/:postId' component={Posts} />
+          <Route path='/posts' component={Posts} />
+          <Route path='/:post_id' component={Post} />
         </Switch>
         </div>
       </BrowserRouter>
